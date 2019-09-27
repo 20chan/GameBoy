@@ -1,11 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace GameBoy {
+namespace GameBoy.CPU {
     [StructLayout(LayoutKind.Sequential, Size = 1)]
     public struct FlagRegister {
         public BitField Data;
 
-        public bool CY {
+        public bool C {
             get => Data[4];
             set => Data[4] = value;
         }
@@ -20,7 +20,7 @@ namespace GameBoy {
             set => Data[6] = value;
         }
 
-        public bool ZF {
+        public bool Z {
             get => Data[7];
             set => Data[7] = value;
         }

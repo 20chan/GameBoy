@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace GameBoy {
+namespace GameBoy.CPU {
     [StructLayout(LayoutKind.Explicit)]
     public struct Register {
         [FieldOffset(0)]
