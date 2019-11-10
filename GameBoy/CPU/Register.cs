@@ -8,7 +8,7 @@ namespace GameBoy.CPU {
         [FieldOffset(0)]
         public byte A;
         [FieldOffset(1)]
-        public byte F;
+        public FlagRegister F;
 
         [FieldOffset(2)]
         public ushort BC;
